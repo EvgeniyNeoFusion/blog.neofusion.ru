@@ -1,0 +1,25 @@
+# Site settings
+title: IT Blog by NeoFusion
+url: 'http://blog.neofusion.ru'
+disqus_shortname: 'neofusion-blog'
+
+# Build settings
+exclude: ['Gemfile']
+
+future: true
+
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: <!--more-->
+
+permalink: /:year/:month/:day/:title.html
+timezone: Europe/Moscow
+
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    span:
+      disable: true
+
+sass:
+  style: compressed

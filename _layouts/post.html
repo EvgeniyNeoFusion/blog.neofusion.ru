@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article>
+    <header>
+        <h3>{{ page.title }}</h3>
+        <p class="text-muted">
+            <small>
+                <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%F" }}</time>
+                {% if page.author %}<span>&middot; By {{ page.author }}</span>{% endif %}
+            </small>
+        </p>
+    </header>
+    <div>
+        {{ content }}
+    </div>
+    {% if jekyll.environment == 'production' and site.disqus_shortname %}
+        {% include disqus.html %}
+    {% endif %}
+</article>

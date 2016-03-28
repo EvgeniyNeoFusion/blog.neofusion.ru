@@ -1,0 +1,26 @@
+.text-muted {
+  a {
+    color: $muted-link-color;
+
+    &:hover,
+    &:focus {
+      color: $muted-link-hover-color;
+    }
+  }
+}
+.footer {
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid $pre-border-color;
+  text-align: center;
+  overflow: auto;
+
+  @media (min-width: $screen-sm-min) {
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+  }
+}

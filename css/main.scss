@@ -1,0 +1,30 @@
+---
+---
+@charset "utf-8";
+
+// *** Bootstrap ***
+// Scaffolding
+$body-bg: #333333;
+$text-color: #d0d0d0;
+$link-color: #ffb50a;
+// Grid system
+$grid-gutter-width: 30px;
+// Container sizes
+$container-large-desktop: (940px + $grid-gutter-width);
+// Code
+$code-color: #eeeeee;
+$code-bg: #1e1e1e;
+$pre-bg: $code-bg;
+$pre-color: $code-color;
+$pre-border-color: #a51c22;
+// Type
+$blockquote-border-color: $pre-border-color;
+
+// *** Style ***
+$muted-link-color: darken($link-color, 15%);
+$muted-link-hover-color: darken($link-color, 25%);
+
+// *** Font Awesome ***
+$fa-font-path: "../fonts/font-awesome";
+
+@import "bootstrap", "style", "font-awesome";

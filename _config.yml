@@ -8,6 +8,9 @@ exclude: ['Gemfile']
 
 future: true
 
+gems:
+  - jekyll-sitemap
+
 markdown: kramdown
 highlighter: rouge
 excerpt_separator: <!--more-->

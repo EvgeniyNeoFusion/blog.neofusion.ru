@@ -10,4 +10,7 @@ layout: default
         </small>
     </p>
     {{ post.excerpt }}
+    {% if post.content contains '<!--more-->' %}
+        <p><b>(</b> <a href="{{ post.url }}">Читать далее</a> <b>)</b></p>
+    {% endif %}
 {% endfor %}

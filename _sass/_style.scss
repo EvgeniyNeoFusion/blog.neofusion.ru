@@ -24,3 +24,22 @@
     }
   }
 }
+.comments {
+  .nav-tabs {
+    > li.active {
+      > a {
+        color: $text-color;
+      }
+    }
+  }
+  .tab-content {
+    > .tab-pane {
+      display: block;
+      height: 0;
+      overflow: hidden;
+    }
+    > .active {
+      height: auto;
+    }
+  }
+}

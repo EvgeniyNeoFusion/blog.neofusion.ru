@@ -27,4 +27,4 @@ $muted-link-hover-color: darken($link-color, 25%);
 // *** Font Awesome ***
 $fa-font-path: "../fonts/font-awesome";
 
-@import "bootstrap", "style", "font-awesome";
+@import "bootstrap", "style", "font-awesome", "syntax-highlighting";

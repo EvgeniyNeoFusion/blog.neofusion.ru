@@ -1,27 +1,5 @@
 {% if jekyll.environment == 'production' %}
-    {% if site.disqus_shortname and site.vk_id %}
-        <div class="comments">
-            <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active">
-                    <a href="#disqus" aria-controls="disqus" role="tab" data-toggle="tab">Disqus</a>
-                </li>
-                <li role="presentation">
-                    <a href="#vk" aria-controls="vk" role="tab" data-toggle="tab">VK</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="disqus">
-                    {% include disqus.html %}
-                </div>
-                <div role="tabpanel" class="tab-pane" id="vk">
-                    {% include vk.html %}
-                </div>
-            </div>
-        </div>
-        <script src="/js/bootstrap.min.js"></script>
-    {% elsif site.disqus_shortname %}
+    {% if site.disqus_shortname %}
         {% include disqus.html %}
-    {% elsif site.vk_id %}
-        {% include vk.html %}
     {% endif %}
 {% endif %}

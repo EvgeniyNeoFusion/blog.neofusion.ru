@@ -2,7 +2,6 @@
 title: IT Blog by NeoFusion
 url: 'http://blog.neofusion.ru'
 disqus_shortname: 'neofusion-blog'
-vk_id: 5860722
 
 # Build settings
 exclude: ['Gemfile']

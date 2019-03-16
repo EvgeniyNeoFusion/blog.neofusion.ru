@@ -4,8 +4,4 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title | escape }} &middot; {% endif %}{{ site.title | escape }}</title>
     <link rel="stylesheet" href="/css/main.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    {% if jekyll.environment == 'production' and site.vk_id %}
-        <script src="//vk.com/js/api/openapi.js?139"></script>
-    {% endif %}
 </head>
